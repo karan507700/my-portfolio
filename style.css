@@ -1,59 +1,20 @@
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
-color:white;
-text-align:center;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-header{
-display:flex;
-justify-content:space-between;
-padding:15px;
-background:rgba(0,0,0,0.5);
-}
+<body style="text-align:center;">
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-}
+<h1>My Resume</h1>
 
-.hero{
-margin-top:50px;
-}
+<!-- PDF SHOW OPTION -->
+<iframe src="resume.pdf" width="80%" height="600px"></iframe>
 
-.profile{
-width:150px;
-height:150px;
-border-radius:50%;
-object-fit:cover;
-border:3px solid white;
-}
+<br><br>
 
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:10px 20px;
-background:#00c6ff;
-color:white;
-text-decoration:none;
-border-radius:8px;
-}
+<a href="index.html">Back to Home</a>
 
-.social a{
-color:white;
-margin:10px;
-text-decoration:none;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:12px 15px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-}
+</body>
+</html>
