@@ -1,0 +1,76 @@
+body {
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+.hero {
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1 {
+font-size:50px;
+}
+
+.hero span {
+color:#38bdf8;
+}
+
+.btn {
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+.section {
+padding:40px 20px;
+text-align:center;
+}
+
+.card {
+background:#1e293b;
+margin:20px auto;
+padding:20px;
+width:80%;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover {
+transform:scale(1.03);
+}
+
+.skill {
+margin:10px;
+text-align:left;
+}
+
+.bar {
+height:8px;
+background:#38bdf8;
+border-radius:10px;
+}
+
+.html {width:95%;}
+.css {width:90%;}
+.js {width:70%;}
+.cpp {width:80%;}
+
+.floating {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+color:white;
+font-size:20px;
+}
