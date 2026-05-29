@@ -1,42 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home | Karan Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
-  <h1>🔥 Karan Ahire</h1>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume Page</a>
-  </nav>
+<header>
+
+<div class="logo">Karan.dev</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="resume.pdf" download>Resume</a>
+</nav>
+
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
 
-  <!-- PROFILE IMAGE (YOUR REAL FILE) -->
-  <img src="images/5karan.jpg" class="profile">
+<div class="card">
 
-  <h2>Welcome to My Portfolio</h2>
-  <p>Web Developer | C++ Learner | Student</p>
+<img src="images/5karan.jpg" class="profile">
 
-  <!-- SOCIAL -->
-  <div class="social">
-    <a href="https://github.com/" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-  </div>
+<h1>Hi, I'm Karan 👋</h1>
 
-  <!-- BUTTONS -->
-  <a href="resume.html" class="btn">View Resume Page</a>
-  <a href="resume.pdf" class="btn2" download>Download Resume PDF</a>
+<h2 class="typing"></h2>
+
+<p>
+Web Developer | C++ Learner | Computer Technology Student
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="resume.pdf" class="btn2" download>
+Download Resume
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="https://github.com/" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://linkedin.com/" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://instagram.com/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- SCRIPT FILE -->
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<p>
+I build stylish modern websites and learn software development.
+</p>
+
+</section>
+
+<section id="projects" class="section">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>Portfolio Website</h3>
+<p>Modern responsive portfolio website.</p>
+</div>
+
+<div class="box">
+<h3>C++ Calculator</h3>
+<p>Simple calculator using C++.</p>
+</div>
+
+<div class="box">
+<h3>GitHub Projects</h3>
+<p>Learning and building projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Karan Ahire • All Rights Reserved
+</footer>
+
 <script src="script.js"></script>
 
 </body>
