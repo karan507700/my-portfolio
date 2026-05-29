@@ -1,12 +1,31 @@
-const text = "Web Developer | C++ Learner | Tech Enthusiast";
-let i = 0;
+const text = [
+"Frontend Developer",
+"C++ Programmer",
+"Future Software Engineer"
+];
 
-function typeEffect() {
-document.querySelector(".typing").innerHTML += text.charAt(i);
-i++;
-if (i < text.length) {
-setTimeout(typeEffect, 80);
-}
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+
+if(count === text.length){
+count = 0;
 }
 
-typeEffect();
+currentText = text[count];
+letter = currentText.slice(0, ++index);
+
+document.querySelector(".typing").textContent = letter;
+
+if(letter.length === currentText.length){
+count++;
+index = 0;
+setTimeout(type, 1200);
+}else{
+setTimeout(type, 100);
+}
+
+})();
