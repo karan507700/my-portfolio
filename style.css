@@ -1,20 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Resume</title>
-<link rel="stylesheet" href="style.css">
-</head>
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid white;
+}
 
-<body style="text-align:center;">
+.btn{
+background:#38bdf8;
+padding:10px 18px;
+margin:10px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+display:inline-block;
+}
 
-<h1>My Resume</h1>
+.btn2{
+background:#22c55e;
+padding:10px 18px;
+margin:10px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+display:inline-block;
+}
 
-<!-- PDF SHOW OPTION -->
-<iframe src="resume.pdf" width="80%" height="600px"></iframe>
-
-<br><br>
-
-<a href="index.html">Back to Home</a>
-
-</body>
-</html>
+.social a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
