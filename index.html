@@ -1,47 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
+<title>My Professional Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karan Ahire | Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    margin:50px auto;
+    background: rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.profile-box{
+    position:relative;
+    display:inline-block;
+}
+
+#profilePic{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#profilePic:hover{
+    transform:scale(1.05);
+}
+
+input{
+    display:none;
+}
+
+h1{
+    margin-top:15px;
+    font-size:28px;
+}
+
+p{
+    opacity:0.9;
+}
+
+.btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#00c6ff;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0072ff;
+}
+</style>
 </head>
 
 <body>
 
-<header class="hero">
+<div class="container">
 
-  <!-- PROFILE IMAGE (FIXED) -->
-  <div class="profile">
-    <img src="./profile.jpg" alt="Karan Ahire">
-  </div>
+    <div class="profile-box">
+        <img id="profilePic" src="https://via.placeholder.com/160" alt="Profile Image"
+        onclick="document.getElementById('fileInput').click()">
+    </div>
 
-  <h1>Hi, I'm <span>Karan Ahire</span></h1>
+    <input type="file" id="fileInput" accept="image/*">
 
-  <p class="typing"></p>
+    <h1>Your Name</h1>
+    <p>Web Developer | C++ Learner | Computer Technology Student</p>
 
-  <a href="resume.html" class="btn">View Resume</a>
-  <a href="resume.pdf" class="btn">Download CV</a>
+    <button class="btn" onclick="resetImage()">Reset Image</button>
 
-</header>
+</div>
 
-<section class="section">
+<script>
 
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I am a Computer Technology student passionate about Web Development and C++ programming.</p>
-  </div>
+// Load saved image
+window.onload = function(){
+    let saved = localStorage.getItem("profileImage");
+    if(saved){
+        document.getElementById("profilePic").src = saved;
+    }
+};
 
-  <div class="card">
-    <h2>Skills</h2>
-    <p>HTML | CSS | JavaScript | C++</p>
-  </div>
+// Upload image
+document.getElementById("fileInput").addEventListener("change", function(){
+    let file = this.files[0];
+    let reader = new FileReader();
 
-</section>
+    reader.onload = function(){
+        let imgData = reader.result;
+        document.getElementById("profilePic").src = imgData;
 
-<script src="script.js"></script>
+        // Save permanently in browser
+        localStorage.setItem("profileImage", imgData);
+    };
+
+    if(file){
+        reader.readAsDataURL(file);
+    }
+});
+
+// Reset image
+function resetImage(){
+    localStorage.removeItem("profileImage");
+    document.getElementById("profilePic").src = "https://via.placeholder.com/160";
+}
+
+</script>
 
 </body>
 </html>
