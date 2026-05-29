@@ -1,7 +1,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
 color:white;
 text-align:center;
 }
@@ -9,8 +9,7 @@ text-align:center;
 header{
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:15px 20px;
+padding:15px;
 background:rgba(0,0,0,0.5);
 }
 
@@ -18,51 +17,33 @@ nav a{
 color:white;
 margin:10px;
 text-decoration:none;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#00c6ff;
 }
 
 .hero{
-margin-top:60px;
-animation:fadeIn 1.5s ease-in;
+margin-top:50px;
 }
 
 .profile{
 width:150px;
 height:150px;
 border-radius:50%;
-border:3px solid white;
 object-fit:cover;
-transition:0.3s;
-}
-
-.profile:hover{
-transform:scale(1.05);
+border:3px solid white;
 }
 
 .btn{
 display:inline-block;
-margin-top:15px;
+margin-top:10px;
 padding:10px 20px;
 background:#00c6ff;
 color:white;
 text-decoration:none;
 border-radius:8px;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#0072ff;
-transform:scale(1.05);
 }
 
 .social a{
 color:white;
 margin:10px;
-font-size:20px;
 text-decoration:none;
 }
 
@@ -75,10 +56,4 @@ padding:12px 15px;
 border-radius:50px;
 color:white;
 text-decoration:none;
-font-weight:bold;
-}
-
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(20px);}
-to{opacity:1; transform:translateY(0);}
 }
