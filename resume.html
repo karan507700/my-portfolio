@@ -1,66 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
+  <title>Resume - Karan Ahire</title>
 
   <style>
-    body{
+    body {
       font-family: Arial;
-      background:#0f172a;
-      color:white;
-      margin:0;
-      padding:20px;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
 
-    .box{
-      max-width:800px;
-      margin:auto;
-      background:#1e293b;
-      padding:20px;
-      border-radius:10px;
+    iframe {
+      width: 90%;
+      height: 600px;
+      border: none;
     }
 
-    h1{
-      text-align:center;
-    }
-
-    a{
-      color:#38bdf8;
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
     }
   </style>
-
 </head>
 
 <body>
 
-<div class="box">
-
   <h1>My Resume</h1>
 
-  <h2>Name: Karan Ahire</h2>
-  <p>Computer Technology Student</p>
-
-  <h3>Education</h3>
-  <p>Diploma in Computer Technology</p>
-
-  <h3>Skills</h3>
-  <ul>
-    <li>C++ Programming</li>
-    <li>HTML & CSS</li>
-    <li>GitHub Basics</li>
-  </ul>
-
-  <h3>Contact</h3>
-  <p>Email: ahirekaran7709@gmail.com</p>
-  <p>Phone: 9322792831</p>
+  <iframe src="files/resume.pdf"></iframe>
 
   <br>
 
-  <a href="index.html">⬅ Back to Home</a>
+  <a class="btn" href="files/resume.pdf" download>Download Resume</a>
 
-</div>
+  <a class="btn" href="index.html">Back to Home</a>
 
 </body>
+
 </html>
